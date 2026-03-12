@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact De Automation Systems. Get in touch for a free consultation and discover how automation can transform your business.">
+    <title>Contact Us | De Automation Systems</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="./index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <span>De Automation</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./contact.html" class="active">Contact</a></li>
+            </ul>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 40vh; padding-top: 120px;">
+        <div class="container">
+            <div class="hero-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <h1>Get In <span>Touch</span></h1>
+                <p>Ready to automate your business? Fill out the form below and we'll get back to you within 24 hours.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Let's Start a Conversation</h2>
+                    <p>Whether you're looking to automate lead capture, streamline workflows, or integrate AI into your business, we're here to help.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>hello@deautomation.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+1 (234) 567-8900</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+1 (234) 567-8900</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4" style="margin-top: 2rem;">
+                        <h4 style="margin-bottom: 1rem;">Follow Us</h4>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="#" style="width: 45px; height: 45px; background: var(--bg-secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-color); font-size: 1.25rem; transition: var(--transition);">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" style="width: 45px; height: 45px; background: var(--bg-secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-color); font-size: 1.25rem; transition: var(--transition);">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" style="width: 45px; height: 45px; background: var(--bg-secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-color); font-size: 1.25rem; transition: var(--transition);">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" style="width: 45px; height: 45px; background: var(--bg-secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-color); font-size: 1.25rem; transition: var(--transition);">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="form-card">
+                    <h3>Request a Free Consultation</h3>
+                    <p>Fill out the form below and our team will reach out to discuss your automation needs.</p>
+                    
+                    <form id="leadForm" novalidate>
+                        <!-- Name Field -->
+                        <div class="form-group">
+                            <label for="name">Full Name <span>*</span></label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-control" 
+                                placeholder="Enter your full name"
+                                required
+                            >
+                            <span class="error-message">Please enter your name</span>
+                        </div>
+                        
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <label for="email">Email Address <span>*</span></label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-control" 
+                                placeholder="Enter your email address"
+                                required
+                            >
+                            <span class="error-message">Please enter a valid email address</span>
+                        </div>
+                        
+                        <!-- Phone Field -->
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span>*</span></label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                class="form-control" 
+                                placeholder="Enter your phone number"
+                                required
+                            >
+                            <span class="error-message">Please enter a valid phone number</span>
+                        </div>
+                        
+                        <!-- Business Type Field -->
+                        <div class="form-group">
+                            <label for="businessType">Business Type <span>*</span></label>
+                            <select 
+                                id="businessType" 
+                                name="businessType" 
+                                class="form-control"
+                                required
+                            >
+                                <option value="">Select your business type</option>
+                                <option value="real-estate">Real Estate</option>
+                                <option value="ecommerce">E-commerce</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="finance">Finance & Insurance</option>
+                                <option value="technology">Technology</option>
+                                <option value="consulting">Consulting</option>
+                                <option value="retail">Retail</option>
+                                <option value="manufacturing">Manufacturing</option>
+                                <option value="education">Education</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message">Please select your business type</span>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i>
+                            Submit Request
+                        </button>
+                    </form>
+                    
+                    <!-- Success Message (Hidden by default) -->
+                    <div id="successMessage" class="success-message">
+                        <div class="success-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h3>Thank You!</h3>
+                        <p>Your request has been submitted successfully. Our team will contact you within 24 hours to discuss your automation needs.</p>
+                        <a href="./index.html" class="btn btn-primary">
+                            <i class="fas fa-home"></i>
+                            Back to Home
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Got questions? We've got answers.</p>
+            </div>
+            
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="service-number">?</div>
+                    <div class="service-content">
+                        <h3>How long does it take to implement automation?</h3>
+                        <p>Implementation time varies based on complexity. Simple automations can be ready in a few days, while more complex workflows may take 2-4 weeks. We'll provide a timeline during our initial consultation.</p>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-number">?</div>
+                    <div class="service-content">
+                        <h3>Do I need technical knowledge to use your services?</h3>
+                        <p>Not at all! We handle all the technical aspects for you. Once your automation is set up, we provide training and documentation to ensure your team can use it effectively.</p>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-number">?</div>
+                    <div class="service-content">
+                        <h3>What tools can you integrate with?</h3>
+                        <p>We can integrate with virtually any tool that has an API. Popular integrations include Google Sheets, Make.com, Zapier, WhatsApp Business API, Salesforce, HubSpot, Mailchimp, and many more.</p>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-number">?</div>
+                    <div class="service-content">
+                        <h3>Is my data secure?</h3>
+                        <p>Absolutely. We follow industry best practices for data security and privacy. All data transfers are encrypted, and we never store sensitive information longer than necessary.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Still Have Questions?</h2>
+            <p>Don't hesitate to reach out. We're here to help you understand how automation can benefit your business.</p>
+            <a href="mailto:hello@deautomation.com" class="btn btn-primary btn-large">
+                <i class="fas fa-envelope"></i>
+                Email Us Directly
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="./index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <span>De Automation</span>
+                    </a>
+                    <p>Transforming businesses through intelligent automation solutions. Your partner in digital evolution.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="./services.html">Lead Capture</a></li>
+                        <li><a href="./services.html">Workflow Automation</a></li>
+                        <li><a href="./services.html">AI Integration</a></li>
+                        <li><a href="./services.html">CRM Setup</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto: deautomate1@gmail.com"><i class="fas fa-envelope"></i> Email Us</a></li>
+                        <li><a href="tel:+2347069451846"><i class="fas fa-phone"></i> Call Us</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 De Automation Systems. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
